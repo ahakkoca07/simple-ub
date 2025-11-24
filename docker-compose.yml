@@ -1,5 +1,5 @@
 services:
-  edith:
+  telethon-core:
     build:
       context: .
       dockerfile: Dockerfile
