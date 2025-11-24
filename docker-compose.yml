@@ -1,0 +1,13 @@
+services:
+  edith:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: telethon-core
+    restart: unless-stopped
+    volumes:
+      - .:/app/
+    environment:
+      - TZ=UTC
+    env_file:
+      - .env
